@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button,ButtonToolbar} from 'react-bootstrap'
 import images from './../image.js'
-const len = 2 // number of image in the set 
+const len = 9 // number of image in the set -1 
 export default class Question extends React.Component{
     constructor(props){
         super(props);
@@ -29,18 +29,20 @@ export default class Question extends React.Component{
 
     render(){
         return (
-            <div>
+            <div style={{height: this.props.height , backgroundColor: '#212F3D'}}>
                 <div style={{height : this.props.height/3}}>
                 </div>
                 <img
-                    style={{ height: 'auto' , width : 'auto'}}
+                    style={{  width : 500}}
                     src={images[this.state.index]}
                     alt="images"
                 />
-                <ButtonToolbar style={{marginLeft: this.props.width/2}}>
-                    <Button onClick={this.handleClickY} bsStyle='primary' bsSize='large'>
+                <ButtonToolbar style={{marginLeft:(this.props.width/2)-50}}>
+                    <Button 
+                        style={{marginRight:40}} 
+                        onClick={this.handleClickY} bsStyle='primary' bsSize='large'>
                         Yes
-                    </Button>
+                    </Button>{' '}
                     <Button onClick={this.handleClickN} bsStyle='primary' bsSize='large'>
                         No
                     </Button>

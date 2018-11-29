@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './home.js'
 import Animation from './../animation.js'
+import Result from './result.js'
 import Question from './question.js'
 import FormComponent from './form.js'
 import {Button,ProgressBar} from 'react-bootstrap'
@@ -77,28 +78,20 @@ export default class Expe extends React.Component{
         let active 
 
         switch (state) {
-
             case 0 :
                 return  (
                         <Home 
                             height={this.props.height}
                             width={this.props.width}
                             handleClick={this.handleNextStatus}
-                        />
-                )    
-            case 1 :
-                return(
-                    <div style={{height:this.props.height /* , backgroundColor: '#212F3D'*/ }}>
-                        <FormComponent
                             handleAge={this.handleAge}
                             handleGender={this.handleGender}
                             handleOther={this.handleOther}
                             gender={this.state.data.gender}
-                            handleClick={this.handleNextStatus}
+                            state={this.state.status}
                         />
-                    </div>
                 )    
-            case 2 :
+            case 1 :
                 return(
                     <div style={{height: this.props.height , backgroundColor: '#212F3D'}}>
                         <div style={{ height:(this.props.height/2)-20}}>
@@ -106,9 +99,9 @@ export default class Expe extends React.Component{
                         <Button onClick={this.handleNextStatus} bsStyle='primary' bsSize='large'>START TEST</Button>
                     </div>
                 )
-            case 3 :
+            case 2 :
                 return(
-                    <div  style={{height: this.props.height , backgroundColor: '#212F3D'}} >
+                    <div  style={{height: this.props.height ,  backgroundColor: '#212F3D'}} >
                         <div style={{height: this.props.height/3}}>
                         </div>
                         <Animation
@@ -116,7 +109,7 @@ export default class Expe extends React.Component{
                         />
                     </div>
                 )
-            case 4 :
+            case 3 :
                 return <Question
                             height={this.props.height}
                             width={this.props.width}
@@ -124,12 +117,15 @@ export default class Expe extends React.Component{
                             
                         />;
 
-            case 5 :
-//                return <Result/>;
+            case 4 :
+                return <Result
+                            height={this.props.height}
+                            handleFinish={this.handleFinishTest}
+                        />;
             case -1 : 
 //                return <Info/>
             default :
-                return null;
+                return <div> <h1> error not valid state </h1> </div>
         }
     
     }

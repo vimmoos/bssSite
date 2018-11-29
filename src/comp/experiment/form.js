@@ -23,16 +23,15 @@ export default class FormComponent extends React.Component{
                         </FormControl>
                     </FormGroup>
                 </Form>
-                <form>
-                    <FormGroup controlId='formOther'>
-                        <ControlLabel> Example for other stuff</ControlLabel>
+                <Form inline style={{marginTop: 20}} >
+                    <FormGroup controlId='Nationality'>
+                        <ControlLabel>Nationality</ControlLabel>{'  '}
                         <FormControl 
                                 type='text'
                                 onChange={this.props.handleOther}
                         />
                     </FormGroup>
-                </form>
-                <Button onClick={this.props.handleClick} bsStyle='primary' bsSize='large'> Submit </Button>
+                </Form>
             </div>
         )
     }
