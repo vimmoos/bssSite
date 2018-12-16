@@ -1,0 +1,166 @@
+creating new file
+listening 3001
+{ hello: 'world', mimmo: 'xe monon', res: 0 }
+{ data: 
+   { other: 'asf',
+     gender: 'male',
+     age: '463',
+     resultI: 14,
+     resultA: 14 } }
+{ data: 
+   { other: 'Netherlands',
+     gender: 'male',
+     age: '17',
+     resultI: 20,
+     resultA: 24 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'male',
+     age: '20',
+     resultI: 21,
+     resultA: 25 } }
+{ data: 
+   { other: 'saas',
+     gender: 'male',
+     age: '12',
+     resultI: 14,
+     resultA: 11 } }
+{ data: 
+   { other: 'fas',
+     gender: 'male',
+     age: '325',
+     resultI: 14,
+     resultA: 16 } }
+{ data: 
+   { other: 'sf',
+     gender: 'male',
+     age: '31',
+     resultI: 26,
+     resultA: 29 } }
+{ data: 
+   { other: 'asffsa',
+     gender: 'male',
+     age: '5',
+     resultI: 11,
+     resultA: 14 } }
+{ data: 
+   { other: 'asf',
+     gender: 'male',
+     age: '24',
+     resultI: 19,
+     resultA: 13 } }
+{ data: 
+   { other: 'test',
+     gender: 'male',
+     age: '345',
+     resultI: 19,
+     resultA: 0 } }
+{ data: 
+   { other: 'test',
+     gender: 'male',
+     age: '435',
+     resultI: 15,
+     resultA: 0 } }
+{ data: { other: 'sf', gender: 'male', age: '', resultI: 15, resultA: 0 } }
+{ data: 
+   { other: 'test ',
+     gender: 'male',
+     age: '21',
+     resultI: 17,
+     resultA: 15 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'male',
+     age: '22',
+     resultI: 20,
+     resultA: 23 } }
+{ data: 
+   { other: 'Italian',
+     gender: 'male',
+     age: '21',
+     resultI: 25,
+     resultA: 25 } }
+{ data: 
+   { other: 'Italian',
+     gender: 'male',
+     age: '21',
+     resultI: 27,
+     resultA: 24 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'female',
+     age: '21',
+     resultI: 23,
+     resultA: 23 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'male',
+     age: '21',
+     resultI: 26,
+     resultA: 22 } }
+{ data: 
+   { other: 'Italian',
+     gender: 'male',
+     age: '21',
+     resultI: 29,
+     resultA: 18 } }
+{ data: 
+   { other: 'Italian',
+     gender: 'male',
+     age: '25',
+     resultI: 25,
+     resultA: 23 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'female',
+     age: '19',
+     resultI: 25,
+     resultA: 20 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'female',
+     age: '22',
+     resultI: 25,
+     resultA: 23 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'female',
+     age: '18',
+     resultI: 27,
+     resultA: 21 } }
+{ data: 
+   { other: 'nl',
+     gender: 'male',
+     age: '56',
+     resultI: 24,
+     resultA: 23 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'female',
+     age: '19',
+     resultI: 28,
+     resultA: 29 } }
+{ data: 
+   { other: 'Dutch (Frisian)',
+     gender: 'male',
+     age: '18',
+     resultI: 27,
+     resultA: 26 } }
+{ data: 
+   { other: 'Dutch',
+     gender: 'male',
+     age: '58',
+     resultI: 26,
+     resultA: 21 } }
+{ data: 
+   { other: 'netherland',
+     gender: 'female',
+     age: '50',
+     resultI: 25,
+     resultA: 24 } }
+{ data: 
+   { other: 'dutch',
+     gender: 'female',
+     age: '50',
+     resultI: 21,
+     resultA: 17 } }
