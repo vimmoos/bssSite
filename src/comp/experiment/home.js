@@ -34,17 +34,16 @@ export default class Home extends React.Component{
                     <Panel.Body>
                         <p>I hereby consent to be a participant in the current research </p>
 
-                        <p>I have agreed to take part in the study entitled (TITLE), and I understand that my participation is entirely voluntary.</p>
+                        <p>I have agreed to take part in the study entitled 'Visual vs Auditory memory comparison', and I understand that my participation is entirely voluntary.</p>
                         <p>I understand that my responses will be kept strictly confidential and anonymous.</p>
                         <p>I have the option to withdraw from this study at any time without penalty, 
                             and I also have the right to request that my responses not be used. </p>
-
+                        
                         <p>The following points have been explained to me:</p>
-
-                        <p>The goal of this study is (GOAL). </p>
+                        <p>The goal of this study is to understand if the recognition of stimuli is better in visual than in auditory short-term memory . </p>
                         <p>Participation in this study should help advance our understanding of working memory.</p>
-                        <p>I shall be asked to (??). </p>
-                        <p>The current study will last approximately (??). 
+                        <p>I shall be asked to recognize different images and sounds </p>
+                        <p>The current study will last approximately 20 minutes. 
                         At the end of the study, the researcher will explain to me in more detail what the research was about. </p>
                         <p>My responses will be treated confidentially and my anonymity will be ensured.
                             Hence, my responses cannot be identifiable and linked back to me as an individual. </p>
@@ -60,11 +59,9 @@ export default class Home extends React.Component{
                 <div>
                 <Panel>
                     <Panel.Heading>
-                        <Panel.Title componentClass="h2"> Instruction</Panel.Title>
+                        <Panel.Title componentClass="h2"> Data Collection</Panel.Title>
                     </Panel.Heading>
                     <Panel.Body>
-                        the instruction for the tester blablablab
-
                         <h2>Please enter your Data</h2>
                         <FormComponent
                             handleAge={this.props.handleAge}
@@ -74,7 +71,14 @@ export default class Home extends React.Component{
                         />
                     </Panel.Body>
                 </Panel>
-                <Button onClick={this.props.handleClick} bsStyle='primary' bsSize='large'>Submit</Button>
+                <Button 
+                    onClick={this.props.handleClick} 
+                    bsStyle='primary' 
+                    bsSize='large'
+                    disabled={this.props.disabled}
+                >
+                    Submit
+                </Button>
                 </div>
             )
         }
@@ -82,7 +86,7 @@ export default class Home extends React.Component{
         return (
         <Panel style={{height:this.props.height}} >
             <Panel.Heading>
-            <Panel.Title componentClass='h1'>Memory app 0.2</Panel.Title >
+            <Panel.Title componentClass='h1'>Memory app 0.5</Panel.Title >
             </Panel.Heading>
             <Panel.Body>
                 {body}
