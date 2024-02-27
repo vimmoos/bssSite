@@ -11,3 +11,6 @@ For the frontend install the needed packages with `npm install` from the fronten
 Then run `npm start` this will run the dev version of the frontend.
 The default port is `3000` on localhost.
 The connection to the backend is made through localhost. If you have the backend somewhere else (most of the time) than change the variable `ip` in the `frontend/src/comp/experiment/expe.js` file.
+### NOTE if you have errors
+if needed try to use this:
+`export NODE_OPTIONS=--openssl-legacy-provider`
