@@ -9,6 +9,7 @@ import FormComponent from './form.js'
 import axios from 'axios'
 import {Button,ProgressBar} from 'react-bootstrap'
 const def = "male"
+const ip ='http://localhost:3001' 
 export default class Expe extends React.Component{
 
     constructor(props){
@@ -41,7 +42,7 @@ export default class Expe extends React.Component{
 
     handleFinishTest = () => {
         const data = this.state.data
-        axios.post('http://159.65.197.6:3001/submit',{data})
+        axios.post(ip + "/submit" ,{data})
             .then(res => {
                 console.log(res)
                 console.log(res.data)

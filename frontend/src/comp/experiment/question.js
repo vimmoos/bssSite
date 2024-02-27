@@ -5,15 +5,15 @@ import audios from './../audios.js'
 const correctI = [ true,true,false,false,true,false,false,true,false,false,true,true,false,true,false,false,false,true,false,true,true,true,false,true,false,true,false,true,false,true]
 
 const correctA= [ true,true,true,true,false,false,true,false,false,false,true,true,false,true,false,true,true,false,true,false,true,false,false,false,true,false,true,false,true,false]
-const len = 29 // number of image in the set -1 
+const len = 29 // number of image in the set -1
 export default class Question extends React.Component{
     constructor(props){
         super(props);
-        this.state = { 
+        this.state = {
             index: 0,
             resultI : 0,
             resultA : 0,
-            disabled : false 
+            disabled : false
         }
     }
 
@@ -31,7 +31,7 @@ export default class Question extends React.Component{
         }
         if ( this.state.index === len ) {
         }
-    }   
+    }
 
     handleClickY = () => {
         let idx = this.state.index;
@@ -50,12 +50,13 @@ export default class Question extends React.Component{
            if ( idx >= len) {
                setTimeout(()=>{
                     this.props.handleResult(this.state.resultA)
-                    this.props.handleNext()
+                   this.props.handleNext()
+
                },500)
            }else{
-               this.setState({ 
+               this.setState({
                    index : idx+1 ,
-                   disabled : true 
+                   disabled : true
                })
            }
         }
@@ -70,7 +71,7 @@ export default class Question extends React.Component{
                     this.props.handleResult(this.state.resultI)
                     this.props.handleNext()
                 },500)
-            }else{ 
+            }else{
                 this.setState({index: idx+1})
             }
         }else{
@@ -81,9 +82,9 @@ export default class Question extends React.Component{
                     this.props.handleNext()
                },500)
            }else{
-                this.setState({ 
+                this.setState({
                    index : idx+1 ,
-                   disabled : true 
+                   disabled : true
                })
            }
         }
@@ -94,10 +95,10 @@ export default class Question extends React.Component{
         audio.play()
         this.setState({ disabled : false })
     }
-    
+
     render(){
-        const index = this.state.index 
-        let question 
+        const index = this.state.index
+        let question
         if (this.props.type === 'i') {
             question =  <div>
                             <div style={{height : this.props.height/10}}>
@@ -114,14 +115,14 @@ export default class Question extends React.Component{
                             <div style={{height : this.props.height/3}}>
                             </div>
                             <h1 style={{color : 'white'}}>Was this sound played before?</h1>
-                            <audio 
+                            <audio
                                 id="audio"
                                 src={audios[index]}
                             >
-                                The Browser do not support the audio tag 
+                                The Browser do not support the audio tag
                             </audio>
-                            <Button 
-                                onClick={this.handlePlay} 
+                            <Button
+                                onClick={this.handlePlay}
                                 bsStyle='primary'
                                 bsSize='large'
                             > PLAY
@@ -134,17 +135,17 @@ export default class Question extends React.Component{
             <div style={{height: this.props.height , backgroundColor: '#212F3D'}}>
                 {question}
                 <ButtonToolbar style={{marginLeft:(this.props.width/2)-250}}>
-                    <Button 
-                        style={{marginRight:375}} 
-                        onClick={this.handleClickY} 
+                    <Button
+                        style={{marginRight:375}}
+                        onClick={this.handleClickY}
                         bsStyle='primary'
                         bsSize='large'
                         disabled={this.state.disabled}
                     >
                         Yes
                     </Button>{' '}
-                    <Button 
-                        onClick={this.handleClickN} 
+                    <Button
+                        onClick={this.handleClickN}
                         bsStyle='primary'
                         bsSize='large'
                         disabled={this.state.disabled}
